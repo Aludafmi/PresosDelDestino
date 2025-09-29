@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #030000;
+    background-color: #010003;
     background-image: url('IMAGENES/integrantes.jpg');
     background-size: 50% ;
     background-repeat: no-repeat;
@@ -132,3 +132,59 @@ footer {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    
+
+
+
+
+
+@media (max-width: 900px) {
+    .titulo {
+        font-size: 2.5em;
+        padding: 10px 20px 10px 60px;
+        background-size: 80px;
+        background-position: 20px center;
+    }
+
+    ul {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+
+    li {
+        width: 100%;
+        font-size: 1em;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 5px;
+        background-size: cover;
+    }
+
+    .titulo {
+        font-size: 1.5em;
+        padding: 10px 10px 10px 10px;
+        background-size: 50px;
+        background-position: 5px center;
+    }
+
+    ul {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    li {
+        font-size: 0.95em;
+        padding: 8px;
+    }
+
+    h2, h3 {
+        font-size: 1.2em;
+        padding: 5px;
+    }
+}
+
