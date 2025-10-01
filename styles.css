@@ -58,10 +58,10 @@ header {
 }
 
 .musica {
-    display: flex;
+    display:grid;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 25px;
     margin: 10px;
     padding: 10px;
 
@@ -196,14 +196,12 @@ footer {
     }
 
     .logo-container {
-        height: 100px;
-        width: 100px;
+        height: 120px;
+        width: 120px;
     }
 
-
-
     .titulo {
-        font-size: 1.75em;
+        font-size: 2em;
         height: fit-content;
         padding: 10px;
         background-size: 80px;
@@ -221,13 +219,13 @@ footer {
     }
 
     li {
-        font-size: 0.85em;
+        font-size: 0.65em;
         padding: 8px;
         height: auto;
     }
 
     h2 {
-        font-size: 1.5em;
+        font-size: 1.2em;
         padding: 5px;
     }
 
@@ -235,11 +233,6 @@ footer {
         font-size: 0.7em;
     }
 }
-
-
-
-
-
 
 
 
