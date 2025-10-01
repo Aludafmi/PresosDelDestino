@@ -196,14 +196,14 @@ footer {
     }
 
     .logo-container {
-        height: 85px;
-        width: 85px;
+        height: 100px;
+        width: 100px;
     }
 
 
 
     .titulo {
-        font-size: 1.7em;
+        font-size: 1.75em;
         height: fit-content;
         padding: 10px;
         background-size: 80px;
