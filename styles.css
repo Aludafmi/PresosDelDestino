@@ -53,6 +53,9 @@ header {
     font-style: normal;
 }
 
+.escucha {
+    font-size: 1.5em;
+}
 
 .musica {
     display: flex;
@@ -142,7 +145,7 @@ ul li:hover {
     display: flex;
     color: white;
     align-items: center;
-    text-align:right;
+    text-align: right;
 }
 
 
@@ -200,12 +203,16 @@ footer {
 
 
     .titulo {
-        font-size: 1.85em;
+        font-size: 1.7em;
         height: fit-content;
         padding: 10px;
         background-size: 80px;
         border-radius: 50px;
         background-position: 5px center;
+    }
+
+    .escucha {
+        font-size: 0.85em;
     }
 
     ul {
