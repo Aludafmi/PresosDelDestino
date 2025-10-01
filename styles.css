@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,61 +7,98 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #010003;
-    background-image: url('IMAGENES/integrantes.jpg');
-    background-size: 50%;
+    background-image: url('IMAGENES/presentación.jpg');
     background-repeat: no-repeat;
+    background-size: 50% background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
 }
 
 header {
+
     text-align: center;
     margin: 15px;
+}
+
+.cabeza {
+    display: flex;
+}
+
+.logo-container {
+    display: block;
+    height: 120px;
+    width: 120px;
+    border: 6px double color-mix(in srgb, #060000 50%, #b93030 100%);
+    border-radius: 70px;
+    background-color: rgba(83, 83, 83, 0.853);
 }
 
 .titulo {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px 10px 10px 10px;
+    margin: 0px 20px 15px 10px;
     width: 100%;
     height: auto;
-    padding: 10px 20px 10px 150px;
+    padding: 10px 20px 10px 20px;
     font-size: 65px;
-    color: #f4f4f4;
-    border-radius: 5px;
-    background-image: url("IMAGENES/logo.jpg");
-    background-size: 145px;
-    background-position: 70px center;
-    background-repeat: no-repeat;
-    background-color: rgba(83, 83, 83, 0.30);
-    border: 4px solid color-mix(in srgb, #060000 50%, #b93030 50%);
-    box-shadow: 0 4px 75px rgba(255, 0, 0, 2.9);
+    color: #000000;
+    border: 7px double color-mix(in srgb, #060000 50%, #ff0000 50%);
+    border-radius: 50px;
+    background-color: rgba(83, 83, 83, 0.853);
+    box-shadow: 0 10px 15px rgba(255, 0, 0, 2.9);
+    text-shadow: 0 0 5px rgb(250, 250, 250), 0 0 15px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255), 0 0 50px rgb(8, 0, 255);
+    font-family: "Rubik Distressed", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
-h2, h3 {
-    font-size: 2.5em;
-    margin-bottom: 15px;
-    color: #e40000;
+
+.musica {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+
+h2 {
+    font-size: 2.3em;
+    /*margin-bottom: 15px;*/
+    color: #ffffff;
     padding: 10px;
     text-align: center;
-    background-color: rgba(83, 83, 83, 0.45);
-    border-radius: 15px;
+    background-color: rgba(255, 0, 0, 0.45);
+    border-radius: 35px;
+    text-shadow: 0 0 5px rgb(1, 1, 1), 0 0 15px rgba(255, 255, 255, 0.595), 0 0 30px rgb(255, 255, 255), 0 0 50px rgb(8, 0, 255);
+}
+
+h3 {
+    font-size: 1.1em;
+    color: #ff0000;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.45);
+    border-radius: 35px;
+    text-shadow: 0 0 5px rgb(255, 255, 255), 0 0 15px rgba(255, 255, 255, 0.595), 0 0 30px rgb(255, 255, 255), 0 0 70px rgb(255, 255, 255);
 }
 
 p {
-    font-size: 0.75em;
+    font-size: 16px;
     margin-bottom: 15px;
     text-align: center;
     color: #f9f9f9;
     background-color: rgba(246, 243, 243, 0.15);
-    padding: 10px;
+    padding: 20px;
 }
 
 a {
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-align: center;
     margin: 5px 5px;
     color: inherit;
@@ -74,52 +110,53 @@ ul {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    gap: 75px;
     justify-content: center;
-    padding: 0;
-    margin: 0 auto 30px auto;
+    padding: 10px;
+    margin: 0 auto 5px auto;
 }
 
 li {
     color: #f9f9f9;
-    height: 75px;
-    text-align: center;
-    font-size: 1.25em;
-    padding: 10px;
-    background-color: #d60505;
-    border: 4px solid color-mix(in srgb, #060000 50%, #b93030 50%);
-    border-radius: 15px;
-    box-shadow: 0 4px 25px rgba(255, 0, 0, 0.9);
+    height: 65px;
+    background-color: #000000;
+    border: 5px double #d9db3c;
+    border-radius: 50px;
+    box-shadow: 0 2px 8px rgba(255, 0, 0, 0.9);
+    text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 1s, background-color 1.75s, color 1s;
+    transition: transform 1s, background-color 1.25s, color 1s;
 }
 
 ul li:hover {
-    background-color: #000000;
-    transform: scale(1.05);
+    background-color: #000000c7;
+    transform: scale(1.25);
     font-weight: bold;
     cursor: pointer;
-    text-shadow: 0 0 105px #289a31;
 }
 
-nav {
-    margin-bottom: 20px;
-    text-align: center;
-    padding: 10px 20px;
+.formulario {
+    padding: 10px;
+    display: flex;
+    color: white;
+    align-items: center;
+    text-align:right;
 }
+
 
 footer {
     text-align: center;
-    margin-top: 10px;
-    padding: 45px;
-    background-color: #282424;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgba(25, 14, 58, 0.43);
     color: #f4f4f4;
     border-radius: 5px;
 }
 
 .form {
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,54 +164,68 @@ footer {
 }
 
 /* Responsividad para tablets */
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     .titulo {
-        font-size: 2.5em;
+        font-size: 3.5em;
         padding: 10px 20px 10px 60px;
         background-size: 80px;
         background-position: 20px center;
     }
 
     ul {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 15px;
     }
 
     li {
-        font-size: 1em;
+        font-size: 1 em;
         padding: 10px;
         height: auto;
     }
 }
 
 /* Responsividad para móviles */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     body {
         padding: 5px;
-        background-size: cover;
+        background-size: contain;
+        background-position-y: top;
     }
 
+    .logo-container {
+        height: 85px;
+        width: 85px;
+    }
+
+
+
     .titulo {
-        font-size: 1.5em;
+        font-size: 1.75em;
+        height: fit-content;
         padding: 10px;
-        background-size: 50px;
+        background-size: 80px;
+        border-radius: 50px;
         background-position: 5px center;
     }
 
     ul {
-        grid-template-columns: 1fr;
-        gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
     }
 
     li {
-        font-size: 1em;
+        font-size: 0.65em;
         padding: 8px;
         height: auto;
     }
 
-    h2, h3 {
-        font-size: 1.2em;
+    h2 {
+        font-size: 1.5em;
         padding: 5px;
+    }
+
+    p {
+        font-size: 0.85em;
     }
 }
 
@@ -187,7 +238,7 @@ footer {
 
 
 
-/* Esto es el anterior bloque de CSS */* 
+/* Esto es el anterior bloque de CSS */
 /* 
 {
     box-sizing: border-box;

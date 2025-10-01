@@ -7,43 +7,54 @@
     <title>Presos del Destino</title>
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik+Distressed&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1 class="titulo">Presos del Destino   </h1>
+        <div class="cabeza">
+            <img class="logo-container" src="IMAGENES/logo.jpg" alt="">
+            <h1 class="titulo">Presos del Destino </h1>
+        </div>
+
         <nav>
             <ul>
-                <li><a href="about">Conócenos</a></li>
-                <li><a href="integrantes">Integrantes</a></li>
-                <li><a href="contacto">Contacto</a></li>
+                <li><a href="#about">Conócenos</a></li>
+                <li><a href="#integrantes">Integrantes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
-        </nav>  
-        <nav class="musica">
-            <audio class= "audio1" controls>
-                <source src="MUSICA/1. Corazon.mp3" type="audio/mpeg">
-            </audio>
-
-            <audio class= "audio2" controls>
-                <source src="MUSICA/2.  Insurreccion.mp3" type="audio/mpeg">
-
-            </audio>
-
-            <audio class= "audio3"   controls>
-                <source src="MUSICA/3. Efecto Espiral .mp3" type="audio/mpeg">
-            </audio>
-
-
         </nav>
 
-
     </header>
+    <h3>ESCUCHA NUESTROS DEMOS</H3>
+    <nav class="musica">
+        <audio class="audio1" controls>
+            Corazón:
+            <source src="MUSICA/1. Corazon.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio class="audio2" controls>
+            <source src="MUSICA/2.  Insurreccion.mp3" type="audio/mpeg">
+
+        </audio>
+
+        <audio class="audio3" controls>
+            <source src="MUSICA/3. Efecto Espiral .mp3" type="audio/mpeg">
+        </audio>
+
+
+    </nav>
+
+
+
 
     <main>
         <section id="about">
             <h2>Quiénes somos</h2>
-            <p> 🎶 PRESOS DEL DESTINO 🎶 es una banda de rock peruano que inició en el año 2008, a modo de pasatiempo entre
+            <p> 🎶 PRESOS DEL DESTINO 🎶 es una banda de rock peruana que inició en el año 2008, a modo de pasatiempo
+                entre
                 amigos que se conocieron en la academia, en tiempos de preparación para el ingreso a la universidad;
                 pasaron por diversos nombres como "Agujeros Negros", "Faraway", "Acoustic Park", teniendo su mejor
                 momento con el nombre de "Sidereus" donde se alcanzó mayor madurez musical, participando en distintos
@@ -74,20 +85,25 @@
 
         <section id="contacto">
             <h2>Contacto</h2>
-            <form action="#" method="post">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
+            <div class="formulario">
+                <form action="#" method="post">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required></br>
 
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required></br>
 
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" required></textarea>
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" required></textarea></br>
 
-                <button type="submit">Enviar</button>
-            </form>
+                    <button type="submit">Enviar</button>
+                </form>
+
+            </div>
+
         </section>
-                <nav>
+
+        <nav class="redsocial">
             <ul>
                 <li><a href="https://www.facebook.com/bandapresosdeldestino" target="_blank">Facebook</a></li>
                 <li><a href="https://www.instagram.com/bandapresosdeldestino/" target="_blank">Instagram</a></li>
@@ -100,4 +116,3 @@
         </footer>
 
 </body>
-
